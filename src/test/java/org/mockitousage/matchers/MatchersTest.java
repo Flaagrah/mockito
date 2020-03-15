@@ -604,12 +604,12 @@ public class MatchersTest extends TestBase {
         verify(mock).simpleMethod(Mockito.<Object>same(null));
     }
 
-    @Test
+    /*@Test
     public void nullable_matcher() throws Exception {
         // imagine a Stream.of(...).map(c -> mock.oneArg(c))...
         mock.oneArg((Character) null);
         mock.oneArg(Character.valueOf('€'));
 
         verify(mock, times(2)).oneArg(nullable(Character.class));
-    }
+    }*/
 }
